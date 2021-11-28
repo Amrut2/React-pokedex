@@ -57,7 +57,7 @@ function App() {
         <>
         <h1> {pokemon.name}</h1>
         <img src={ pokemon.img }  />
-        <h3>Species: <span>{pokemon.type} </span> </h3>
+        <h3>Type: <span>{pokemon.type} </span> </h3>
         {/* <h4>HP : {pokemon.hp }</h4> */}
         </>
         
