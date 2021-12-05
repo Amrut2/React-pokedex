@@ -19,7 +19,7 @@ function App() {
     species: "",
     img: "",
     hp: "",
-    type:"",
+    type: "",
   });
   //function for click event
   const searchPokemon = () => {
@@ -30,7 +30,7 @@ function App() {
           species: response.data.species.name,
           img: response.data.sprites.other.dream_world.front_default,
           hp: response.data.stats[0].base_stat,
-          type : response.data.types[0].type.name,
+          type: response.data.types[0].type.name,
         })
         setPokemonChosen(true)
 
@@ -42,7 +42,7 @@ function App() {
         <h1> Pokedex </h1>
 
         {/* Grabbing everything written in the input box using event.target.value */}
-        <input type="text" spellcheck="false" placeholder = "Enter Pokemon name ..."
+        <input type="text" spellcheck="false" placeholder="Enter Pokemon name ..."
           onChange={(event) => {
             setPokemonName(event.target.value);
           }} />
@@ -53,14 +53,16 @@ function App() {
       </div>
       <div className="DisplaySection">
         {!pokemonChosen ? (<h3>where's Pokemon</h3>) : (
-        
-        <>
-        <h1> {pokemon.name}</h1>
-        <img src={ pokemon.img }  />
-        <h3>Type: <span>{pokemon.type} </span> </h3>
-        {/* <h4>HP : {pokemon.hp }</h4> */}
-        </>
-        
+
+          <>
+            <h1>Name: <span> {pokemon.name}</span></h1>
+            <div className="img-thing">
+              <img src={pokemon.img} />
+            </div>
+            <h3>Type: <span>{pokemon.type} </span> </h3>
+            {/* <h4>HP : {pokemon.hp }</h4> */}
+          </>
+
         )}
       </div>
     </div>

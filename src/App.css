@@ -11,15 +11,15 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #9c89b8;
+  background-color: #5f7ab1;
 }
 h1 {
-  color: #22223b;
-  text-shadow: 2px 2px #d00000;
+  color: #DA0037;
+  text-shadow: 3px 3px #17223B;
 }
 
 .TitleSection {
-  background-color: #2a9d8f;
+  background-color: #1D2D50;
   width: 100%;
   height: 300px;
   display: flex;
@@ -42,7 +42,7 @@ h1 {
   margin: 20px;
   border-radius: 10px;
   padding-left: 10px;
-  background-color: #1d3557;
+  background-color: #3165ad;
   border: none;
   color: #e3e3e3;
 }
@@ -56,29 +56,33 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid black;
   width: 25vw;
-  background-color: #013a63;
-  color: white;
-  box-shadow: 12px 13px 19px 4px rgba(0, 0, 0, 0.65);
-  -webkit-box-shadow: 12px 13px 19px 4px rgba(0, 0, 0, 0.65);
-  -moz-box-shadow: 12px 13px 19px 4px rgba(0, 0, 0, 0.65);
+  background-color: #5f7ab1;
+  color: rgb(182, 52, 52);
+ 
 }
 .DisplaySection h1 {
-  color: #fbba72;
+  color: #EEEEEE;
+  text-shadow: 1px 1px #17223B;
 }
 
 .DisplaySection h3,
 h4 {
-  margin: 9px;
-  color: white;
+  margin: 16px;
+  color: #190857;
+  font-weight: 700;
 }
 
 .DisplaySection img {
   width: 20vw;
-  height: 24vh;
+  height: 25vh;
 }
 
 span{
-  color: #fbba72;
+  margin-top: 10px;
+  color: #17223B;
+}
+
+.img-thing{
+  filter: drop-shadow(16px 16px 10px black)
 }
